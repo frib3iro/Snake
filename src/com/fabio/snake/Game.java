@@ -6,6 +6,7 @@ public class Game {
     
     private Snake player;
     private Food food;
+    private Graphics graphics;
     
     private JFrame window;
     
@@ -18,6 +19,8 @@ public class Game {
         
         window.setTitle("Snake");
         window.setSize(width * dimension, heigth * dimension);
+        window.setVisible(true);
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
 }
